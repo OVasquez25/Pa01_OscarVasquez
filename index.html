@@ -1,115 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Gcocina</title>
+    <title>Mi Primer Sitio Web Semántico</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Página web básica para demostrar habilidades en HTML5 y CSS3.">
+    <meta name="keywords" content="HTML5, CSS3, diseño web, desarrollo web, ejemplo">
+    <meta name="author" content="Tu Nombre">
 </head>
 <body>
-    <main>
-        <header>
-            <h1>Grupo de cocina</h1>
-        </header>
+
+    <header>
+        <h1>Bienvenido a Mi Sitio Web</h1>
         <nav>
-            <a href="Inicio"></a>
-            <a href="Nosotros"></a>
-            <a href="Servicios"></a>
-            <a href="Contactos"></a>
+            <ul>
+                <li><a href="#introduccion">Inicio</a></li>
+                <li><a href="#seccion-html">HTML Semántico</a></li>
+                <li><a href="#seccion-css">Estilos CSS</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">Recursos Externos</a></li>
+            </ul>
         </nav>
-<!--    Seccion 1 Baner-->
-        <section>
-            <h1>Descuentos al 80%</h1>
-            <h2>Disfruta nuestroa servicios.</h2>
+    </header>
+
+    <main>
+        <section id="introduccion">
+            <h2>Introducción al Desarrollo Web</h2>
+            <p>
+                Este es un ejemplo práctico para demostrar los conocimientos adquiridos en el curso de Diseño Web, enfocándonos en HTML5 para la estructura y CSS3 para el estilo.
+            </p>
+            <p>
+                El desarrollo web es un campo fascinante que nos permite construir experiencias interactivas y visualmente atractivas en línea. Se divide principalmente en dos grandes áreas:
+            </p>
+            <ol>
+                <li>**Frontend:** Lo que el usuario ve e interactúa directamente en el navegador (HTML, CSS, JavaScript).</li>
+                <li>**Backend:** La lógica del servidor, bases de datos y la gestión de la información (lenguajes como Python, PHP, Node.js, etc.).</li>
+            </ol>
+            <p>¡Esperamos que este sitio te sea útil como referencia!</p>
+            <a href="#contacto" class="boton-contacto">Contáctanos</a>
         </section>
-<!--    Seccion 2 Baner-->
-        <section>
-            <h2>Nuestros Servicios 2</h2>
-            <p>Tu lugar para aprender y disfrutar de la cocina.</p>
-            <div>
-                <h4>Receta de Tallarines</h4>
-                <p>Aprende a preparar tallarines de una manera sencilla y deliciosa.</p>
-                <p>Los tallarines son un tipo de pasta que se originó en Italia y se han convertido en un alimento básico en muchas cocinas de todo el mundo. Se pueden preparar de muchas maneras diferentes, desde simples platos de pasta con salsa hasta recetas más elaboradas con mariscos, verduras y carnes.</p>
-                <p>Para preparar tallarines, necesitarás los siguientes ingredientes:</p>
+
+        <section id="seccion-html">
+            <h2>Explorando HTML Semántico</h2>
+            <article class="articulo-semantico">
+                <h3>El Poder de la Semántica en HTML5</h3>
+                <p>
+                    HTML5 introdujo un conjunto de etiquetas semánticas que ayudan a los navegadores y motores de búsqueda a entender el significado de las diferentes partes de una página. Esto no solo mejora la **accesibilidad** sino también el **SEO**.
+                </p>
+                <h4>Elementos Comunes de HTML5:</h4>
                 <ul>
-                    <li>250 gramos de tallarines</li>
-                    <li>1 cucharada de aceite de oliva</li>
-                    <li>2 dientes de ajo picados</li>
-                    <li>1 lata de tomate triturado</li>
-                    <li>Sal y pimienta al gusto</li>
-                <img src="img/tallarines01.jpg" alt="  ">
-                
-            </div>
-            <div>
-                <h4>REceta de ensaladas </h4>
-                <img src="img/2.jpg" alt="  ">
-            </div>
-            <div>               
-                <h4>Resusltados </h4>
-                <img src="img/3.jpg" alt="  ">
-            </div>
-        </section>
-<!--    Seccion 3 Baner-->
-        <section>
-            <h2>Servicios</h2>
-            <p>Ofrecemos una variedad de servicios para todos los amantes de la cocina.</p>
-            <div>
-                <table>
-                    <tr>
-                        <ht>Dato 1 </ht>
-                        <ht>Dato 2 </ht>
-                        
-                        <td>Clases de cocina</td>
-                        <td>Aprende a cocinar platos deliciosos con nuestros chefs expertos.</td>
-                    </tr>
-                    <tr>
-                        <td>Recetas</td>
-                        <td>Descubre nuevas recetas y técnicas de cocina.</td>
-                    </tr>
-                    <tr>
-                        <td>Eventos</td>
-                        <td>Organizamos eventos culinarios para disfrutar en grupo.</td>
-                    </tr>
-            </div>
-        </section>
-<!--    Seccion 4 Receyta de ensalada-->
-        <section>
-            <h2>Receta de Ensalada</h2>
-            <p>Aprende a preparar una ensalada fresca y deliciosa.</p>
-            <p>La ensalada es un plato versátil que se puede disfrutar como aperitivo, acompañamiento o plato principal. Puedes personalizarla con tus ingredientes favoritos y aderezos.</p>
-            <p>Para preparar una ensalada básica, necesitarás los siguientes ingredientes:</p>
-            <article>
-                    <h4>Receta de Ensalada</h4>
-                    <p>Aprende a preparar una ensalada fresca y deliciosa.</p>
-                    <p>La ensalada es un plato versátil que se puede disfrutar como aperitivo, acompañamiento o plato principal. Puedes personalizarla con tus ingredientes favoritos y aderezos.</p>
-                    <p>Para preparar una ensalada básica, necesitarás los siguientes ingredientes:</p>
-                    <ul>
-                        <li>Lechuga</li>
-                        <li>Tomate</li>
-                        <li>Cebolla</li>
-                        <li>Aguacate</li>
-                        <li>Aderezo al gusto</li>
-                    </ul>
+                    <li>`&lt;header&gt;`: Para el encabezado de un documento o sección.</li>
+                    <li>`&lt;nav&gt;`: Para la navegación principal.</li>
+                    <li>`&lt;main&gt;`: Contenido principal y único de la página.</li>
+                    <li>`&lt;article&gt;`: Contenido independiente y reutilizable.</li>
+                    <li>`&lt;section&gt;`: Temas relacionados.</li>
+                    <li>`&lt;aside&gt;`: Contenido tangencial o barras laterales.</li>
+                    <li>`&lt;footer&gt;`: Pie de página del documento o sección.</li>
+                </ul>
+                <p>
+                    Utilizar estas etiquetas de forma adecuada es una buena práctica y fundamental para un desarrollo web moderno. Por ejemplo, un enlace a otra sección de esta misma página: <a href="#introduccion">Volver a Introducción</a>.
+                </p>
+                <time datetime="2025-05-22">Publicado el 22 de Mayo de 2025</time>
             </article>
-    <!--Seccion 5 From-->
-        <aside>
-            <div>
-                <p>quis eos in vero consequatur !</p>
-                <form action="">
-                    <input type="text" placeholder="Nombre completo">
-                    <input type="email"
-                    placeholder="Correo electronico">
-                    <input type="text"
-                    placeholder="Asunto">
-                    <textarea name="" id="" cols="30"
-                    rows="10" placeholder="Mensaje"></
-                    textarea>
-                    <input type="submit" value="Enviar">
-                </form>
+        </section>
+
+        <section id="seccion-css">
+            <h2>Estilizando con CSS3</h2>
+            <p>
+                CSS3 nos permite dar vida a nuestros diseños, controlando colores, tipografías, espaciados y disposición de los elementos. Es el lenguaje del estilo en la web.
+            </p>
+            <div class="caja-ejemplo">
+                <h3>Modelo de Caja y Propiedades CSS</h3>
+                <p>
+                    Cada elemento HTML es una "caja" con propiedades como:
+                </p>
+                <ul>
+                    <li>**`margin`**: Espacio exterior al borde.</li>
+                    <li>**`border`**: Línea alrededor del elemento.</li>
+                    <li>**`padding`**: Espacio interior entre el contenido y el borde.</li>
+                    <li>**`content`**: El contenido real del elemento.</li>
+                </ul>
+                <p>
+                    Utilizamos selectores para apuntar a elementos específicos, como el selector de clase `.caja-ejemplo` o el selector de tipo `p`. También podemos usar <span class="resaltado-texto">unidades de medida</span> como `px`, `em`, `%`, y codificación de colores como `#RRGGBB` o `rgb()`.
+                </p>
+                <div class="minibox"></div>
+                <div class="minibox"></div>
             </div>
-        </aside>
-            ction>
+        </section>
     </main>
-    
+
+    <footer id="contacto">
+        <p>&copy; 2025 Mi Primer Sitio Web. Todos los derechos reservados.</p>
+        <p>Contacto: <a href="mailto:info@ejemplo.com">info@ejemplo.com</a></p>
+        <p>Síguenos en: <a href="#" aria-label="Enlace a redes sociales">Redes Sociales</a></p>
+    </footer>
+
 </body>
 </html>
