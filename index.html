@@ -3,96 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primer Sitio Web Semántico</title>
+    <title>Razas de Perros más Comunes en Perú</title>
     <link rel="stylesheet" href="styles.css">
-    <meta name="description" content="Página web básica para demostrar habilidades en HTML5 y CSS3.">
-    <meta name="keywords" content="HTML5, CSS3, diseño web, desarrollo web, ejemplo">
-    <meta name="author" content="Tu Nombre">
+    <meta name="description" content="Descubre las razas de perros más populares y comunes en Perú, con sus características principales.">
+    <meta name="keywords" content="perros, razas de perros, Perú, mascotas, animales, dog lovers">
+    <meta name="author" content="Oscar Angel Vasquez Blanco"> ">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
-        <h1>Bienvenido a Mi Sitio Web</h1>
-        <nav>
-            <ul>
-                <li><a href="#introduccion">Inicio</a></li>
-                <li><a href="#seccion-html">HTML Semántico</a></li>
-                <li><a href="#seccion-css">Estilos CSS</a></li>
-                <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">Recursos Externos</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Razas de Perros más Comunes en Perú</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#razas">Nuestras Razas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section id="introduccion">
-            <h2>Introducción al Desarrollo Web</h2>
+    <main class="container">
+        <section id="inicio" class="hero">
+            <h2>Amigos Fieles: Una Mirada a las Razas Perrunas del Perú</h2>
             <p>
-                Este es un ejemplo práctico para demostrar los conocimientos adquiridos en el curso de Diseño Web, enfocándonos en HTML5 para la estructura y CSS3 para el estilo.
+                Perú es un país con una gran diversidad cultural y natural, y esto se extiende también a la variedad de perros que conviven en nuestros hogares. Desde los más guardianes hasta los más juguetones, cada raza aporta su encanto particular. Aquí te presentamos una selección de las razas más comunes y queridas en el territorio peruano.
             </p>
-            <p>
-                El desarrollo web es un campo fascinante que nos permite construir experiencias interactivas y visualmente atractivas en línea. Se divide principalmente en dos grandes áreas:
-            </p>
-            <ol>
-                <li>**Frontend:** Lo que el usuario ve e interactúa directamente en el navegador (HTML, CSS, JavaScript).</li>
-                <li>**Backend:** La lógica del servidor, bases de datos y la gestión de la información (lenguajes como Python, PHP, Node.js, etc.).</li>
-            </ol>
-            <p>¡Esperamos que este sitio te sea útil como referencia!</p>
-            <a href="#contacto" class="boton-contacto">Contáctanos</a>
+            <p class="cta-text">¡Explora y conoce a tu próximo mejor amigo!</p>
         </section>
 
-        <section id="seccion-html">
-            <h2>Explorando HTML Semántico</h2>
-            <article class="articulo-semantico">
-                <h3>El Poder de la Semántica en HTML5</h3>
-                <p>
-                    HTML5 introdujo un conjunto de etiquetas semánticas que ayudan a los navegadores y motores de búsqueda a entender el significado de las diferentes partes de una página. Esto no solo mejora la **accesibilidad** sino también el **SEO**.
-                </p>
-                <h4>Elementos Comunes de HTML5:</h4>
-                <ul>
-                    <li>`&lt;header&gt;`: Para el encabezado de un documento o sección.</li>
-                    <li>`&lt;nav&gt;`: Para la navegación principal.</li>
-                    <li>`&lt;main&gt;`: Contenido principal y único de la página.</li>
-                    <li>`&lt;article&gt;`: Contenido independiente y reutilizable.</li>
-                    <li>`&lt;section&gt;`: Temas relacionados.</li>
-                    <li>`&lt;aside&gt;`: Contenido tangencial o barras laterales.</li>
-                    <li>`&lt;footer&gt;`: Pie de página del documento o sección.</li>
-                </ul>
-                <p>
-                    Utilizar estas etiquetas de forma adecuada es una buena práctica y fundamental para un desarrollo web moderno. Por ejemplo, un enlace a otra sección de esta misma página: <a href="#introduccion">Volver a Introducción</a>.
-                </p>
-                <time datetime="2025-05-22">Publicado el 22 de Mayo de 2025</time>
+        <section id="razas" class="razas-grid">
+            <h2>Descubre las Razas</h2>
+
+            <article class="raza-card">
+                <img src="img/labrador.jpg" alt="Perro Labrador Retriever">
+                <div class="card-content">
+                    <h3>1. Labrador Retriever</h3>
+                    <p class="caracteristicas">
+                        <strong>Características:</strong> Amigable, extrovertido, atlético. Excelente con niños y otras mascotas. Muy inteligente y fácil de entrenar.
+                    </p>
+                    <p class="info-adicional">
+                        Popular por su naturaleza gentil y su versatilidad como perro de familia, servicio o trabajo. Necesita ejercicio regular.
+                    </p>
+                </div>
             </article>
-        </section>
 
-        <section id="seccion-css">
-            <h2>Estilizando con CSS3</h2>
-            <p>
-                CSS3 nos permite dar vida a nuestros diseños, controlando colores, tipografías, espaciados y disposición de los elementos. Es el lenguaje del estilo en la web.
-            </p>
-            <div class="caja-ejemplo">
-                <h3>Modelo de Caja y Propiedades CSS</h3>
-                <p>
-                    Cada elemento HTML es una "caja" con propiedades como:
-                </p>
-                <ul>
-                    <li>**`margin`**: Espacio exterior al borde.</li>
-                    <li>**`border`**: Línea alrededor del elemento.</li>
-                    <li>**`padding`**: Espacio interior entre el contenido y el borde.</li>
-                    <li>**`content`**: El contenido real del elemento.</li>
-                </ul>
-                <p>
-                    Utilizamos selectores para apuntar a elementos específicos, como el selector de clase `.caja-ejemplo` o el selector de tipo `p`. También podemos usar <span class="resaltado-texto">unidades de medida</span> como `px`, `em`, `%`, y codificación de colores como `#RRGGBB` o `rgb()`.
-                </p>
-                <div class="minibox"></div>
-                <div class="minibox"></div>
-            </div>
+            <article class="raza-card">
+                <img src="img/PastorAleman.jpg" alt="Perro Pastor Alemán">
+                <div class="card-content">
+                    <h3>2. Pastor Alemán</h3>
+                    <p class="caracteristicas">
+                        <strong>Características:</strong> Inteligente, leal, valiente. Excelente guardián y perro de trabajo. Requiere socialización temprana.
+                    </p>
+                    <p class="info-adicional">
+                        Una de las razas más versátiles, utilizada en labores policiales, militares y de rescate. Fuerte vínculo con su familia.
+                    </p>
+                </div>
+            </article>
+
+            <article class="raza-card">
+                <img src="img/BulldogFrances.jpg" alt="Perro Bulldog Francés">
+                <div class="card-content">
+                    <h3>3. Bulldog Francés</h3>
+                    <p class="caracteristicas">
+                        <strong>Características:</strong> Juguetón, cariñoso, adaptable. Ideal para vivir en apartamentos y con familias.
+                    </p>
+                    <p class="info-adicional">
+                        Pequeño, con orejas de murciélago y un encanto innegable. Propenso a problemas respiratorios en climas cálidos.
+                    </p>
+                </div>
+            </article>
+
+            <article class="raza-card">
+                <img src="img/Poodle.jpg" alt="Perro Poodle">
+                <div class="card-content">
+                    <h3>4. Poodle (Caniche)</h3>
+                    <p class="caracteristicas">
+                        <strong>Características:</strong> Inteligente, elegante, activo. Disponible en varios tamaños (Toy, Miniatura, Estándar).
+                    </p>
+                    <p class="info-adicional">
+                        Considerado hipoalergénico. Necesita estimulación mental y física. Su pelaje requiere mantenimiento regular.
+                    </p>
+                </div>
+            </article>
+
+            <article class="raza-card">
+                <img src="img/GoldenRetriever.jpg" alt="Perro Golden Retriever">
+                <div class="card-content">
+                    <h3>5. Golden Retriever</h3>
+                    <p class="caracteristicas">
+                        <strong>Características:</strong> Amigable, confiable, gentil. Excelente perro de familia, especialmente con niños.
+                    </p>
+                    <p class="info-adicional">
+                        Energético y juguetón, requiere mucho ejercicio. Su naturaleza paciente lo hace ideal para terapia y asistencia.
+                    </p>
+                </div>
+            </article>
+
+            <article class="raza-card">
+                <img src="img/Chiguagua.jpg" alt="Perro Chihuahua">
+                <div class="card-content">
+                    <h3>6. Chihuahua</h3>
+                    <p class="caracteristicas">
+                        <strong>Características:</strong> Leal, vivaz, protector. El perro más pequeño del mundo, pero con gran personalidad.
+                    </p>
+                    <p class="info-adicional">
+                        Ideal para apartamentos, pero puede ser ruidoso. Requiere socialización para evitar la timidez o agresión.
+                    </p>
+                </div>
+            </article>
+
+            <article class="raza-card">
+                <img src="img/ShihTzu2.webp" alt="Perro Shih Tzu">
+                <div class="card-content">
+                    <h3>7. Shih Tzu</h3>
+                    <p class="caracteristicas">
+                        <strong>Características:</strong> Cariñoso, vivaz, un excelente perro de compañía. Se adapta bien a la vida en interiores.
+                    </p>
+                    <p class="info-adicional">
+                        Conocido por su pelaje largo y sedoso, que requiere cuidado regular. Son encantadores y buenos con los niños mayores.
+                    </p>
+                </div>
+            </article>
+
+            <article class="raza-card">
+                <img src="img/Pug.webp" alt="Perro Pug">
+                <div class="card-content">
+                    <h3>8. Pug</h3>
+                    <p class="caracteristicas">
+                        <strong>Características:</strong> Encantador, sociable, juguetón y a menudo cómico. Muy apegado a sus dueños.
+                    </p>
+                    <p class="info-adicional">
+                        Raza braquicéfala (hocico chato), sensible al calor. Ideal para vivir en apartamentos y familias tranquilas.
+                    </p>
+                </div>
+            </article>
+
+            <article class="raza-card">
+                <img src="img/Rottweiler.jpg" alt="Perro Rottweiler">
+                <div class="card-content">
+                    <h3>9. Rottweiler</h3>
+                    <p class="caracteristicas">
+                        <strong>Características:</strong> Fuerte, leal, protector. Requiere entrenamiento y socialización temprana y constante.
+                    </p>
+                    <p class="info-adicional">
+                        Excelente guardián y perro de familia con dueños experimentados. Muy seguro de sí mismo.
+                    </p>
+                </div>
+            </article>
+
+            <article class="raza-card">
+                <img src="img/PerroPeruano.jpg" alt="Perro sin pelo del Perú">
+                <div class="card-content">
+                    <h3>10. Perro sin Pelo del Perú</h3>
+                    <p class="caracteristicas">
+                        <strong>Características:</strong> Noble, leal, cariñoso con su familia. El perro nacional del Perú.
+                    </p>
+                    <p class="info-adicional">
+                        Antigua raza peruana, conocida por su falta de pelo y su piel suave. Es un excelente compañero y requiere cuidados específicos de la piel.
+                    </p>
+                </div>
+            </article>
+
         </section>
     </main>
 
     <footer id="contacto">
-        <p>&copy; 2025 Mi Primer Sitio Web. Todos los derechos reservados.</p>
-        <p>Contacto: <a href="mailto:info@ejemplo.com">info@ejemplo.com</a></p>
-        <p>Síguenos en: <a href="#" aria-label="Enlace a redes sociales">Redes Sociales</a></p>
+        <div class="container">
+            <p>&copy; PA1 - Diseño Web NRC:25572.  Razas de Perros en Perú. Todos los derechos reservados.</p>
+            <p>&copy; Desarrollado por Oscar Angel Vasquez Blanco</p>
+            <p>Contáctanos en: <a href="mailto:bull0022000@hotmail.com">info_razas_de_perros_peru</a></p>
+        </div>
     </footer>
 
 </body>
